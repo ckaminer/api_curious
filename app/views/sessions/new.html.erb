@@ -1,0 +1,6 @@
+<% if current_user %>
+  <h1>Get murked, <%= current_user.first_name %></h1>
+  <%= link_to "Logout", logout_path, method: :delete %>
+<% else %>
+  <%= link_to "Sign in with Google", google_login_path, method: :get %>
+<% end %>
