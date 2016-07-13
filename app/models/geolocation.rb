@@ -9,4 +9,12 @@ class Geolocation < OpenStruct
     Geolocation.new(coordinates)
   end
 
+  def self.longitude
+    retrieve.location[:lng]
+  end
+
+  def self.latitude
+    retrieve.location[:lat]
+  end
+
 end
