@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g&location=39.7511873,-105.0031571&name=chipotle&radius=500&types=food
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Key:
+      - AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 14 Jul 2016 17:34:53 GMT
+      Expires:
+      - Thu, 14 Jul 2016 17:39:53 GMT
+      Cache-Control:
+      - public, max-age=300
+      Vary:
+      - Accept-Language
+      Server:
+      - pablo
+      Content-Length:
+      - '990'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30,29,28,27,26,25"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.750287,
+                       "lng" : -104.999022
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.7504037,
+                          "lng" : -104.9988747
+                       },
+                       "southwest" : {
+                          "lat" : 39.75024809999999,
+                          "lng" : -104.9990711
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+                 "id" : "e9ef881dd62e99ace6881a11e70fb390b4a60b53",
+                 "name" : "Chipotle Mexican Grill",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 5248,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/109535013753899148036/photos\"\u003eJake Rome\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CoQBdwAAANqlyR-DUzV6HfPRkgsGAvRCDOKGzGM3KuIZ7b6q0V05c8Spo7KX32HT3HLOcUmnqvj2gnBgFuzPdMPNs2QcbqwgkezYBMXkn7dlSFwvfnzzfsNSxGFfjicCw0r__rMtHH6dP0maK0Mzaz1oujrWaXkRM12a6I3JDXsYOr-AjXSHEhBv32cQ7AJDKoCmo8y_r3LsGhQfl4SKmWY-mC82FYUltT6lfhms4A",
+                       "width" : 2952
+                    }
+                 ],
+                 "place_id" : "ChIJo2w968R4bIcRhnW4pg6F-fk",
+                 "price_level" : 1,
+                 "rating" : 3.9,
+                 "reference" : "CnRqAAAAfRGDpLLqRLXUyYiUcecWoK7Y0De2f7Cpr5SGnTBDISIZr5N-oNsZg87vFjry0yi5dtWmlQVpjf_lAqJZj4MfX7Tgy4m4_2YwRyr62mRw8Zc805v_77ucyhi3XWrrYF0oI4tkzg4PNbC2dvok7O0KkBIQ0QBLD3R8RpLIlORcYNVIrBoUeJfub7Ug85tOgOBlXofWXPxmvug",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "vicinity" : "1480 16th Street, Denver"
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 17:34:54 GMT
+recorded_with: VCR 3.0.3
