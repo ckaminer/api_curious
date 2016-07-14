@@ -9,6 +9,7 @@ class DirectionService
     current = Geocoding.retrieve(lat, lng).results.first[:formatted_address]
     response = connection.get("/maps/api/directions/json?origin=#{current}&destination=#{destination}&key=#{ENV["GOOGLE_API_KEY"]}")
     json = parse(response)
+    byebug
     deliver_steps(json)
   end
 
