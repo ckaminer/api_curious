@@ -4,10 +4,11 @@ describe GeocodingService do
   context "#geocoding" do
     it "returns your current address" do
       VCR.use_cassette("geocodings") do
-        lat = Geolocation.latitude
-        lng = Geolocation.longitude
+        lat = 39.7508388
+        lng = -105.0028147
         geocode = GeocodingService.new.get_address(lat, lng)
-        expect(geocode[:results].first.keys).to eq [:address_components, :formatted_address, :geometry, :place_id, :types]
+
+        expect(geocode).to eq "1449 Wynkoop St, Denver, CO 80202, USA"
       end
     end
   end

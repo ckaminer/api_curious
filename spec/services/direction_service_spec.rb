@@ -6,7 +6,7 @@ describe DirectionService do
       VCR.use_cassette("directions") do
         lat = 39.7511873
         lng = -105.0031571
-        destination = PlaceService.new.get_chipotle(lat, lng, 500)[:results].first[:vicinity]
+        destination = PlaceService.new.get_chipotle(lat, lng, 500)
         directions = DirectionService.new.get_directions(lat, lng, destination)
 
         expect(directions.class).to eq Array

@@ -6,7 +6,7 @@ class Place < OpenStruct
 
   def self.chipotle(lat, lng, rad)
     chipotle = service.get_chipotle(lat, lng, rad)
-    Place.new(chipotle)
+    Place.new({address: chipotle})
   end
 
 

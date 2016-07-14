@@ -1,7 +1,7 @@
 The nearest chipotle is located at:<br/>
-<%= @chipotle.results.first[:vicinity] %><br/>
+<%= @chipotle.address %><br/>
 
-Take me <%= link_to "there!", direction_path(chipotle: @chipotle.results.first[:vicinity]) %>
+Take me <%= link_to "there!", direction_path(chipotle: @chipotle.address) %>
 
 <div>
   <iframe width="420" height="315" src="https://www.youtube.com/embed/ZxRZkcEUqqQ?autoplay=1"></iframe>
