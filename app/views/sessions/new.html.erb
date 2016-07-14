@@ -1,5 +1,5 @@
 <% if current_user %>
-  <h1>Get murked, <%= current_user.first_name %></h1>
+  <h1>Hungry, <%= current_user.first_name %>?</h1>
   <%= link_to "Logout", logout_path, method: :delete %><br/>
   <%= link_to "I really wish I knew what my coordinates were right now, if only there was a way...", geolocation_path %><br/>
   <%= link_to "At the same time, coodinates are kind of useless.  How bout just my address?", geocoding_path %><br/>
