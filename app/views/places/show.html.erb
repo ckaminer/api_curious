@@ -1,2 +1,4 @@
-The nearest chipotle is located at:
-<%= @chipotle.results.first[:vicinity] %>
+The nearest chipotle is located at:<br/>
+<%= @chipotle.results.first[:vicinity] %><br/>
+
+Take me <%= link_to "there!", direction_path(chipotle: @chipotle.results.first[:vicinity]) %>
