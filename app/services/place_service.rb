@@ -7,7 +7,7 @@ class PlaceService
   end
 
   def get_chipotle(lat, lng, rad)
-    response = connection.post("/maps/api/place/nearbysearch/json?location=#{lat},#{lng}&radius=#{rad}&types=food&name=chipotle&key=#{ENV["GOOGLE_API_KEY"]}")
+    response = connection.get("/maps/api/place/nearbysearch/json?location=#{lat},#{lng}&radius=#{rad}&types=food&name=chipotle&key=#{ENV["GOOGLE_API_KEY"]}")
     parse(response)
   end
 
