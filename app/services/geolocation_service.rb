@@ -2,7 +2,6 @@ class GeolocationService
 
   def initialize
     @_connection = Faraday.new("https://www.googleapis.com")
-    # @_connection.headers["key"] = ENV["GOOGLE_API_KEY"]
   end
 
   def get_coordinates

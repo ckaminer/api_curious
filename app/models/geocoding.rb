@@ -6,7 +6,7 @@ class Geocoding < OpenStruct
 
   def self.retrieve(lat, lng)
     address = service.get_address(lat, lng)
-    Geocoding.new(address)
+    Geocoding.new({address: address})
   end
 
 end

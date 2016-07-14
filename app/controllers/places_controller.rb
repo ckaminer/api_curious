@@ -9,10 +9,4 @@ class PlacesController < ApplicationController
     lng = Geolocation.longitude
     @chipotle = Place.chipotle(lat, lng, params[:radius])
   end
-
-  private
-
-    def place_params
-
-    end
 end

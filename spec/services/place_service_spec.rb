@@ -8,8 +8,7 @@ describe PlaceService do
         lng = -105.0031571
         chipotle = PlaceService.new.get_chipotle(lat, lng, 500)
 
-        expect(chipotle[:results].first[:name]).to eq "Chipotle Mexican Grill"
-        expect(chipotle[:results].first[:vicinity]).to eq "1480 16th Street, Denver"        
+        expect(chipotle).to eq "1480 16th Street, Denver"
       end
     end
   end

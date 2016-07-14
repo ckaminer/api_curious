@@ -23,9 +23,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 14 Jul 2016 18:02:15 GMT
+      - Thu, 14 Jul 2016 20:23:54 GMT
       Expires:
-      - Thu, 14 Jul 2016 18:07:15 GMT
+      - Thu, 14 Jul 2016 20:28:54 GMT
       Cache-Control:
       - public, max-age=300
       Vary:
@@ -33,7 +33,7 @@ http_interactions:
       Server:
       - pablo
       Content-Length:
-      - '992'
+      - '994'
       X-Xss-Protection:
       - 1; mode=block
       X-Frame-Options:
@@ -78,14 +78,14 @@ http_interactions:
                        "html_attributions" : [
                           "\u003ca href=\"https://maps.google.com/maps/contrib/109535013753899148036/photos\"\u003eJake Rome\u003c/a\u003e"
                        ],
-                       "photo_reference" : "CoQBdwAAAGA_y4LSM3UXPlWTf18nLoANg26C5HQq1oXJSEUifLMuJER6Nsynkb_sJUaVt1yenX-hw4zeEJ_Gu9HK-Q6goo9sgZ4JJGo5ch-WUexVMXeZ328awJySCOfsfiWExyoCLeThtnKfVFSPEFNk3k2lVLZP9s6Zre5KTVzSXq8ytUJvEhDjbFXtHtQdzgvv5ESa6IiQGhQ04N4JaWdGx3meJqRWWu9qIJuBEA",
+                       "photo_reference" : "CoQBdwAAAGOElBOC64ws7biviHTBa_lAA9TTtqeVGdmGF4n0sovzp8lWBm_qDTRw8YpcGHYZJPLxBVpL0jX6XxU5daeKEuiQfUP28PlN_yIV7C-9k7ZabjurtSHZc-agVrRwNpnUwOABC4JrCkS_Frzsl2cdfcbBj5Vlo1j3lyfgYFEEA7zaEhARNKioIytw4zgfhwMlRv-iGhSFGcSlfpsKWnsW_bXlAyRkztgrLg",
                        "width" : 2952
                     }
                  ],
                  "place_id" : "ChIJo2w968R4bIcRhnW4pg6F-fk",
                  "price_level" : 1,
                  "rating" : 3.9,
-                 "reference" : "CnRqAAAAXjLG0516mFQjN7j1pGjFxdjvkQ_ab5Cir5lB-RPgGUDvhPW8tkdwefku0D7yE1-t3E0scA9mcDIjmwHhkLtd5-eE90VtFaSU_k3fZ6WXcUfoZZisJv_JxScYN2XC2rn9TaeNJeB3R5mXlrKZDKmJfBIQN-humPQ8hmWOaY-H2hdNuhoUcYMvb2i5TqN5tt7Ofyq23Gidhyg",
+                 "reference" : "CnRqAAAA8YOm8InUT84PsLz7I7hSC5GMQfT0rsfTJndl5L2-9QOqiBR4Xbzgm1Rj5Cr4ZIOOv6BjQRWzl9YOIU-0PS2GY_iizsbQK_0nSV2J9XMRVnDg0OVnHLfFtrZwvQA3wzglt4PkMUO4-vSyJhTO71kchRIQFcTB6_oc743aVjdyfT_bxBoUq_IVM4sVzZSGrIvxaEsY7L8fD9w",
                  "scope" : "GOOGLE",
                  "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
                  "vicinity" : "1480 16th Street, Denver"
@@ -94,7 +94,7 @@ http_interactions:
            "status" : "OK"
         }
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 18:02:16 GMT
+  recorded_at: Thu, 14 Jul 2016 20:23:54 GMT
 - request:
     method: post
     uri: https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g&latlng=39.7511873,-105.0031571
@@ -120,9 +120,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 14 Jul 2016 18:02:15 GMT
+      - Thu, 14 Jul 2016 20:23:54 GMT
       Expires:
-      - Fri, 15 Jul 2016 18:02:15 GMT
+      - Fri, 15 Jul 2016 20:23:54 GMT
       Cache-Control:
       - public, max-age=86400
       Vary:
@@ -209,70 +209,6 @@ http_interactions:
                  },
                  "place_id" : "ChIJ2Und_8N4bIcRHHy417d-LE8",
                  "types" : [ "street_address" ]
-              },
-              {
-                 "address_components" : [
-                    {
-                       "long_name" : "LoDo",
-                       "short_name" : "LoDo",
-                       "types" : [ "neighborhood", "political" ]
-                    },
-                    {
-                       "long_name" : "Denver",
-                       "short_name" : "Denver",
-                       "types" : [ "locality", "political" ]
-                    },
-                    {
-                       "long_name" : "Denver County",
-                       "short_name" : "Denver County",
-                       "types" : [ "administrative_area_level_2", "political" ]
-                    },
-                    {
-                       "long_name" : "Colorado",
-                       "short_name" : "CO",
-                       "types" : [ "administrative_area_level_1", "political" ]
-                    },
-                    {
-                       "long_name" : "United States",
-                       "short_name" : "US",
-                       "types" : [ "country", "political" ]
-                    },
-                    {
-                       "long_name" : "80202",
-                       "short_name" : "80202",
-                       "types" : [ "postal_code" ]
-                    }
-                 ],
-                 "formatted_address" : "LoDo, Denver, CO 80202, USA",
-                 "geometry" : {
-                    "bounds" : {
-                       "northeast" : {
-                          "lat" : 39.7603811,
-                          "lng" : -104.9918405
-                       },
-                       "southwest" : {
-                          "lat" : 39.745886,
-                          "lng" : -105.0081367
-                       }
-                    },
-                    "location" : {
-                       "lat" : 39.7526509,
-                       "lng" : -105.001685
-                    },
-                    "location_type" : "APPROXIMATE",
-                    "viewport" : {
-                       "northeast" : {
-                          "lat" : 39.7603811,
-                          "lng" : -104.9918405
-                       },
-                       "southwest" : {
-                          "lat" : 39.745886,
-                          "lng" : -105.0081367
-                       }
-                    }
-                 },
-                 "place_id" : "ChIJux94CcN4bIcRcH7lFkSAUfo",
-                 "types" : [ "neighborhood", "political" ]
               },
               {
                  "address_components" : [
@@ -631,7 +567,7 @@ http_interactions:
            "status" : "OK"
         }
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 18:02:16 GMT
+  recorded_at: Thu, 14 Jul 2016 20:23:54 GMT
 - request:
     method: get
     uri: https://maps.googleapis.com/maps/api/directions/json?destination=1480%2016th%20Street,%20Denver&key=AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g&origin=1480%20Wewatta%20St,%20Denver,%20CO%2080202,%20USA
@@ -655,9 +591,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 14 Jul 2016 18:02:15 GMT
+      - Thu, 14 Jul 2016 20:23:54 GMT
       Expires:
-      - Fri, 15 Jul 2016 18:02:15 GMT
+      - Fri, 15 Jul 2016 20:23:54 GMT
       Cache-Control:
       - public, max-age=86400
       Vary:
@@ -826,5 +762,5 @@ http_interactions:
         ICAid2F5cG9pbnRfb3JkZXIiIDogW10KICAgICAgfQogICBdLAogICAic3Rh
         dHVzIiA6ICJPSyIKfQo=
     http_version: 
-  recorded_at: Thu, 14 Jul 2016 18:02:16 GMT
+  recorded_at: Thu, 14 Jul 2016 20:23:55 GMT
 recorded_with: VCR 3.0.3
