@@ -1,0 +1,830 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g&location=39.7511873,-105.0031571&name=chipotle&radius=500&types=food
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Key:
+      - AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 14 Jul 2016 18:02:15 GMT
+      Expires:
+      - Thu, 14 Jul 2016 18:07:15 GMT
+      Cache-Control:
+      - public, max-age=300
+      Vary:
+      - Accept-Language
+      Server:
+      - pablo
+      Content-Length:
+      - '992'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30,29,28,27,26,25"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "html_attributions" : [],
+           "results" : [
+              {
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.750287,
+                       "lng" : -104.999022
+                    },
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.7504037,
+                          "lng" : -104.9988747
+                       },
+                       "southwest" : {
+                          "lat" : 39.75024809999999,
+                          "lng" : -104.9990711
+                       }
+                    }
+                 },
+                 "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+                 "id" : "e9ef881dd62e99ace6881a11e70fb390b4a60b53",
+                 "name" : "Chipotle Mexican Grill",
+                 "opening_hours" : {
+                    "open_now" : true,
+                    "weekday_text" : []
+                 },
+                 "photos" : [
+                    {
+                       "height" : 5248,
+                       "html_attributions" : [
+                          "\u003ca href=\"https://maps.google.com/maps/contrib/109535013753899148036/photos\"\u003eJake Rome\u003c/a\u003e"
+                       ],
+                       "photo_reference" : "CoQBdwAAAGA_y4LSM3UXPlWTf18nLoANg26C5HQq1oXJSEUifLMuJER6Nsynkb_sJUaVt1yenX-hw4zeEJ_Gu9HK-Q6goo9sgZ4JJGo5ch-WUexVMXeZ328awJySCOfsfiWExyoCLeThtnKfVFSPEFNk3k2lVLZP9s6Zre5KTVzSXq8ytUJvEhDjbFXtHtQdzgvv5ESa6IiQGhQ04N4JaWdGx3meJqRWWu9qIJuBEA",
+                       "width" : 2952
+                    }
+                 ],
+                 "place_id" : "ChIJo2w968R4bIcRhnW4pg6F-fk",
+                 "price_level" : 1,
+                 "rating" : 3.9,
+                 "reference" : "CnRqAAAAXjLG0516mFQjN7j1pGjFxdjvkQ_ab5Cir5lB-RPgGUDvhPW8tkdwefku0D7yE1-t3E0scA9mcDIjmwHhkLtd5-eE90VtFaSU_k3fZ6WXcUfoZZisJv_JxScYN2XC2rn9TaeNJeB3R5mXlrKZDKmJfBIQN-humPQ8hmWOaY-H2hdNuhoUcYMvb2i5TqN5tt7Ofyq23Gidhyg",
+                 "scope" : "GOOGLE",
+                 "types" : [ "restaurant", "food", "point_of_interest", "establishment" ],
+                 "vicinity" : "1480 16th Street, Denver"
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 18:02:16 GMT
+- request:
+    method: post
+    uri: https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g&latlng=39.7511873,-105.0031571
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Key:
+      - AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 14 Jul 2016 18:02:15 GMT
+      Expires:
+      - Fri, 15 Jul 2016 18:02:15 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Vary:
+      - Accept-Language
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30,29,28,27,26,25"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "1480",
+                       "short_name" : "1480",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Wewatta Street",
+                       "short_name" : "Wewatta St",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Central",
+                       "short_name" : "Central",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver",
+                       "short_name" : "Denver",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver County",
+                       "short_name" : "Denver County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "80202",
+                       "short_name" : "80202",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "1480 Wewatta St, Denver, CO 80202, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 39.7512545,
+                       "lng" : -105.003094
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.7526034802915,
+                          "lng" : -105.0017450197085
+                       },
+                       "southwest" : {
+                          "lat" : 39.7499055197085,
+                          "lng" : -105.0044429802915
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJ2Und_8N4bIcRHHy417d-LE8",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "LoDo",
+                       "short_name" : "LoDo",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver",
+                       "short_name" : "Denver",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver County",
+                       "short_name" : "Denver County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "80202",
+                       "short_name" : "80202",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "LoDo, Denver, CO 80202, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.7603811,
+                          "lng" : -104.9918405
+                       },
+                       "southwest" : {
+                          "lat" : 39.745886,
+                          "lng" : -105.0081367
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.7526509,
+                       "lng" : -105.001685
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.7603811,
+                          "lng" : -104.9918405
+                       },
+                       "southwest" : {
+                          "lat" : 39.745886,
+                          "lng" : -105.0081367
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJux94CcN4bIcRcH7lFkSAUfo",
+                 "types" : [ "neighborhood", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Central",
+                       "short_name" : "Central",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver",
+                       "short_name" : "Denver",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver County",
+                       "short_name" : "Denver County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Central, Denver, CO, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.7603811,
+                          "lng" : -104.940634
+                       },
+                       "southwest" : {
+                          "lat" : 39.6969869,
+                          "lng" : -105.0181369
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.7340952,
+                       "lng" : -104.9713695
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.7603811,
+                          "lng" : -104.940634
+                       },
+                       "southwest" : {
+                          "lat" : 39.6969869,
+                          "lng" : -105.0181369
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJ8UxaWjZ_bIcRslJSzsQj-sI",
+                 "types" : [ "neighborhood", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Denver",
+                       "short_name" : "Denver",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver County",
+                       "short_name" : "Denver County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Denver, CO, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.91424689999999,
+                          "lng" : -104.600296
+                       },
+                       "southwest" : {
+                          "lat" : 39.614431,
+                          "lng" : -105.109927
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.7392358,
+                       "lng" : -104.990251
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.91424689999999,
+                          "lng" : -104.600296
+                       },
+                       "southwest" : {
+                          "lat" : 39.614431,
+                          "lng" : -105.109927
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJzxcfI6qAa4cR1jaKJ_j0jhE",
+                 "types" : [ "locality", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "80202",
+                       "short_name" : "80202",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Denver",
+                       "short_name" : "Denver",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "Denver County",
+                       "short_name" : "Denver County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Denver, CO 80202, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.76666780000001,
+                          "lng" : -104.986105
+                       },
+                       "southwest" : {
+                          "lat" : 39.736849,
+                          "lng" : -105.012165
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.7541032,
+                       "lng" : -105.0002242
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.76666780000001,
+                          "lng" : -104.986105
+                       },
+                       "southwest" : {
+                          "lat" : 39.736849,
+                          "lng" : -105.012165
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJwTF6RcN4bIcRWd8aCrbRvX0",
+                 "types" : [ "postal_code" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Denver County",
+                       "short_name" : "Denver County",
+                       "types" : [ "administrative_area_level_2", "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Denver County, CO, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 39.91424689999999,
+                          "lng" : -104.600296
+                       },
+                       "southwest" : {
+                          "lat" : 39.614431,
+                          "lng" : -105.109927
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.76161889999999,
+                       "lng" : -104.9622498
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 39.91424689999999,
+                          "lng" : -104.600296
+                       },
+                       "southwest" : {
+                          "lat" : 39.614431,
+                          "lng" : -105.109927
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJzWww5uJfbIcRBvfuO6cAtKY",
+                 "types" : [ "administrative_area_level_2", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Denver-Aurora, CO",
+                       "short_name" : "Denver-Aurora, CO",
+                       "types" : [ "political" ]
+                    },
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Denver-Aurora, CO, CO, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 40.044284,
+                          "lng" : -103.705701
+                       },
+                       "southwest" : {
+                          "lat" : 38.693089,
+                          "lng" : -106.210173
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.5142848,
+                       "lng" : -104.8454619
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 40.044284,
+                          "lng" : -103.705701
+                       },
+                       "southwest" : {
+                          "lat" : 38.693089,
+                          "lng" : -106.210173
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJmdjjStKbbIcR5MH987eFdeA",
+                 "types" : [ "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Colorado",
+                       "short_name" : "CO",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Colorado, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 41.00344399999999,
+                          "lng" : -102.040878
+                       },
+                       "southwest" : {
+                          "lat" : 36.9924241,
+                          "lng" : -109.0602561
+                       }
+                    },
+                    "location" : {
+                       "lat" : 39.5500507,
+                       "lng" : -105.7820674
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 41.00344399999999,
+                          "lng" : -102.040878
+                       },
+                       "southwest" : {
+                          "lat" : 36.9924241,
+                          "lng" : -109.0602561
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJt1YYm3QUQIcR_6eQSTGDVMc",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "United States",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 71.3867745,
+                          "lng" : -66.9502861
+                       },
+                       "southwest" : {
+                          "lat" : 18.9106771,
+                          "lng" : 172.4458954
+                       }
+                    },
+                    "location" : {
+                       "lat" : 37.09024,
+                       "lng" : -95.712891
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 49.38,
+                          "lng" : -66.94
+                       },
+                       "southwest" : {
+                          "lat" : 25.82,
+                          "lng" : -124.39
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJCzYy5IS16lQRQrfeQ5K5Oxw",
+                 "types" : [ "country", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 18:02:16 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/directions/json?destination=1480%2016th%20Street,%20Denver&key=AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g&origin=1480%20Wewatta%20St,%20Denver,%20CO%2080202,%20USA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Key:
+      - AIzaSyC67wDGA5vxyEioUy48UJVbbFn2CazfN3g
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 14 Jul 2016 18:02:15 GMT
+      Expires:
+      - Fri, 15 Jul 2016 18:02:15 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Vary:
+      - Accept-Language
+      Server:
+      - mafe
+      Content-Length:
+      - '1107'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 443:quic
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="36,35,34,33,32,31,30,29,28,27,26,25"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICAiZ2VvY29kZWRfd2F5cG9pbnRzIiA6IFsKICAgICAgewogICAgICAg
+        ICAiZ2VvY29kZXJfc3RhdHVzIiA6ICJPSyIsCiAgICAgICAgICJwbGFjZV9p
+        ZCIgOiAiQ2hJSjJVbmRfOE40YkljUkhIeTQxN2QtTEU4IiwKICAgICAgICAg
+        InR5cGVzIiA6IFsgInN0cmVldF9hZGRyZXNzIiBdCiAgICAgIH0sCiAgICAg
+        IHsKICAgICAgICAgImdlb2NvZGVyX3N0YXR1cyIgOiAiT0siLAogICAgICAg
+        ICAicGxhY2VfaWQiIDogIkNoSUpCVWlKNjhSNGJJY1JJVEFraUZ0VksyOCIs
+        CiAgICAgICAgICJ0eXBlcyIgOiBbICJzdHJlZXRfYWRkcmVzcyIgXQogICAg
+        ICB9CiAgIF0sCiAgICJyb3V0ZXMiIDogWwogICAgICB7CiAgICAgICAgICJi
+        b3VuZHMiIDogewogICAgICAgICAgICAibm9ydGhlYXN0IiA6IHsKICAgICAg
+        ICAgICAgICAgImxhdCIgOiAzOS43NTIxNDc0LAogICAgICAgICAgICAgICAi
+        bG5nIiA6IC0xMDQuOTk3OTYzNwogICAgICAgICAgICB9LAogICAgICAgICAg
+        ICAic291dGh3ZXN0IiA6IHsKICAgICAgICAgICAgICAgImxhdCIgOiAzOS43
+        NTAyODIyOTk5OTk5OSwKICAgICAgICAgICAgICAgImxuZyIgOiAtMTA1LjAw
+        MzI0NDYKICAgICAgICAgICAgfQogICAgICAgICB9LAogICAgICAgICAiY29w
+        eXJpZ2h0cyIgOiAiTWFwIGRhdGEgwqkyMDE2IEdvb2dsZSIsCiAgICAgICAg
+        ICJsZWdzIiA6IFsKICAgICAgICAgICAgewogICAgICAgICAgICAgICAiZGlz
+        dGFuY2UiIDogewogICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMC41IG1p
+        IiwKICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDc4NQogICAgICAgICAg
+        ICAgICB9LAogICAgICAgICAgICAgICAiZHVyYXRpb24iIDogewogICAgICAg
+        ICAgICAgICAgICAidGV4dCIgOiAiNCBtaW5zIiwKICAgICAgICAgICAgICAg
+        ICAgInZhbHVlIiA6IDIxNgogICAgICAgICAgICAgICB9LAogICAgICAgICAg
+        ICAgICAiZW5kX2FkZHJlc3MiIDogIjE0ODAgMTZ0aCBTdCwgRGVudmVyLCBD
+        TyA4MDIwMiwgVVNBIiwKICAgICAgICAgICAgICAgImVuZF9sb2NhdGlvbiIg
+        OiB7CiAgICAgICAgICAgICAgICAgICJsYXQiIDogMzkuNzUwNTQzNiwKICAg
+        ICAgICAgICAgICAgICAgImxuZyIgOiAtMTA0Ljk5OTE2MQogICAgICAgICAg
+        ICAgICB9LAogICAgICAgICAgICAgICAic3RhcnRfYWRkcmVzcyIgOiAiMTQ4
+        MCBXZXdhdHRhIFN0LCBEZW52ZXIsIENPIDgwMjAyLCBVU0EiLAogICAgICAg
+        ICAgICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAg
+        ICAibGF0IiA6IDM5Ljc1MTM5OTYsCiAgICAgICAgICAgICAgICAgICJsbmci
+        IDogLTEwNS4wMDMyNDQ2CiAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAg
+        ICAgICJzdGVwcyIgOiBbCiAgICAgICAgICAgICAgICAgIHsKICAgICAgICAg
+        ICAgICAgICAgICAgImRpc3RhbmNlIiA6IHsKICAgICAgICAgICAgICAgICAg
+        ICAgICAgInRleHQiIDogIjEwOCBmdCIsCiAgICAgICAgICAgICAgICAgICAg
+        ICAgICJ2YWx1ZSIgOiAzMwogICAgICAgICAgICAgICAgICAgICB9LAogICAg
+        ICAgICAgICAgICAgICAgICAiZHVyYXRpb24iIDogewogICAgICAgICAgICAg
+        ICAgICAgICAgICAidGV4dCIgOiAiMSBtaW4iLAogICAgICAgICAgICAgICAg
+        ICAgICAgICAidmFsdWUiIDogNwogICAgICAgICAgICAgICAgICAgICB9LAog
+        ICAgICAgICAgICAgICAgICAgICAiZW5kX2xvY2F0aW9uIiA6IHsKICAgICAg
+        ICAgICAgICAgICAgICAgICAgImxhdCIgOiAzOS43NTE2MDU5LAogICAgICAg
+        ICAgICAgICAgICAgICAgICAibG5nIiA6IC0xMDUuMDAyOTcxNAogICAgICAg
+        ICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAiaHRtbF9p
+        bnN0cnVjdGlvbnMiIDogIkhlYWQgXHUwMDNjYlx1MDAzZW5vcnRoZWFzdFx1
+        MDAzYy9iXHUwMDNlIG9uIFx1MDAzY2JcdTAwM2VXZXdhdHRhIFN0XHUwMDNj
+        L2JcdTAwM2UgdG93YXJkIFx1MDAzY2JcdTAwM2UxNXRoIFN0XHUwMDNjL2Jc
+        dTAwM2UiLAogICAgICAgICAgICAgICAgICAgICAicG9seWxpbmUiIDogewog
+        ICAgICAgICAgICAgICAgICAgICAgICAicG9pbnRzIiA6ICJnfXJxRmZte19T
+        aUB1QCIKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAg
+        ICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAg
+        ICAgICAgImxhdCIgOiAzOS43NTEzOTk2LAogICAgICAgICAgICAgICAgICAg
+        ICAgICAibG5nIiA6IC0xMDUuMDAzMjQ0NgogICAgICAgICAgICAgICAgICAg
+        ICB9LAogICAgICAgICAgICAgICAgICAgICAidHJhdmVsX21vZGUiIDogIkRS
+        SVZJTkciCiAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAg
+        IHsKICAgICAgICAgICAgICAgICAgICAgImRpc3RhbmNlIiA6IHsKICAgICAg
+        ICAgICAgICAgICAgICAgICAgInRleHQiIDogIjAuMSBtaSIsCiAgICAgICAg
+        ICAgICAgICAgICAgICAgICJ2YWx1ZSIgOiAyMDkKICAgICAgICAgICAgICAg
+        ICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgImR1cmF0aW9uIiA6IHsK
+        ICAgICAgICAgICAgICAgICAgICAgICAgInRleHQiIDogIjEgbWluIiwKICAg
+        ICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDU0CiAgICAgICAgICAg
+        ICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJlbmRfbG9jYXRp
+        b24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDM5Ljc1
+        MDI4MjI5OTk5OTk5LAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6
+        IC0xMDUuMDAxMjM1MQogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAg
+        ICAgICAgICAgICAgICAiaHRtbF9pbnN0cnVjdGlvbnMiIDogIlR1cm4gXHUw
+        MDNjYlx1MDAzZXJpZ2h0XHUwMDNjL2JcdTAwM2Ugb250byBcdTAwM2NiXHUw
+        MDNlMTV0aCBTdFx1MDAzYy9iXHUwMDNlIiwKICAgICAgICAgICAgICAgICAg
+        ICAgIm1hbmV1dmVyIiA6ICJ0dXJuLXJpZ2h0IiwKICAgICAgICAgICAgICAg
+        ICAgICAgInBvbHlsaW5lIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAg
+        InBvaW50cyIgOiAicX5ycUZwa3tfU2BAaUBESWZAcUByQGdBakB3QGBAbUB2
+        QGVBIgogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAg
+        ICAgICAic3RhcnRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAgICAg
+        ICAgICAibGF0IiA6IDM5Ljc1MTYwNTksCiAgICAgICAgICAgICAgICAgICAg
+        ICAgICJsbmciIDogLTEwNS4wMDI5NzE0CiAgICAgICAgICAgICAgICAgICAg
+        IH0sCiAgICAgICAgICAgICAgICAgICAgICJ0cmF2ZWxfbW9kZSIgOiAiRFJJ
+        VklORyIKICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAg
+        ewogICAgICAgICAgICAgICAgICAgICAiZGlzdGFuY2UiIDogewogICAgICAg
+        ICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMC4yIG1pIiwKICAgICAgICAg
+        ICAgICAgICAgICAgICAgInZhbHVlIiA6IDI5MQogICAgICAgICAgICAgICAg
+        ICAgICB9LAogICAgICAgICAgICAgICAgICAgICAiZHVyYXRpb24iIDogewog
+        ICAgICAgICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMiBtaW5zIiwKICAg
+        ICAgICAgICAgICAgICAgICAgICAgInZhbHVlIiA6IDk1CiAgICAgICAgICAg
+        ICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJlbmRfbG9jYXRp
+        b24iIDogewogICAgICAgICAgICAgICAgICAgICAgICAibGF0IiA6IDM5Ljc1
+        MjE0NzQsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTEwNC45
+        OTg4NTA3CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAg
+        ICAgICAgICJodG1sX2luc3RydWN0aW9ucyIgOiAiVHVybiBcdTAwM2NiXHUw
+        MDNlbGVmdFx1MDAzYy9iXHUwMDNlIG9udG8gXHUwMDNjYlx1MDAzZVdhemVl
+        IFN0XHUwMDNjL2JcdTAwM2UiLAogICAgICAgICAgICAgICAgICAgICAibWFu
+        ZXV2ZXIiIDogInR1cm4tbGVmdCIsCiAgICAgICAgICAgICAgICAgICAgICJw
+        b2x5bGluZSIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJwb2ludHMi
+        IDogImd2cnFGdmB7X1NvQWdCZ0BxQGNBd0FRVVtjQGtDcUQiCiAgICAgICAg
+        ICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICJzdGFydF9s
+        b2NhdGlvbiIgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJsYXQiIDog
+        MzkuNzUwMjgyMjk5OTk5OTksCiAgICAgICAgICAgICAgICAgICAgICAgICJs
+        bmciIDogLTEwNS4wMDEyMzUxCiAgICAgICAgICAgICAgICAgICAgIH0sCiAg
+        ICAgICAgICAgICAgICAgICAgICJ0cmF2ZWxfbW9kZSIgOiAiRFJJVklORyIK
+        ICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgewogICAg
+        ICAgICAgICAgICAgICAgICAiZGlzdGFuY2UiIDogewogICAgICAgICAgICAg
+        ICAgICAgICAgICAidGV4dCIgOiAiMzQ4IGZ0IiwKICAgICAgICAgICAgICAg
+        ICAgICAgICAgInZhbHVlIiA6IDEwNgogICAgICAgICAgICAgICAgICAgICB9
+        LAogICAgICAgICAgICAgICAgICAgICAiZHVyYXRpb24iIDogewogICAgICAg
+        ICAgICAgICAgICAgICAgICAidGV4dCIgOiAiMSBtaW4iLAogICAgICAgICAg
+        ICAgICAgICAgICAgICAidmFsdWUiIDogMzIKICAgICAgICAgICAgICAgICAg
+        ICAgfSwKICAgICAgICAgICAgICAgICAgICAgImVuZF9sb2NhdGlvbiIgOiB7
+        CiAgICAgICAgICAgICAgICAgICAgICAgICJsYXQiIDogMzkuNzUxNDgyNTAw
+        MDAwMDEsCiAgICAgICAgICAgICAgICAgICAgICAgICJsbmciIDogLTEwNC45
+        OTc5NjM3CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAg
+        ICAgICAgICJodG1sX2luc3RydWN0aW9ucyIgOiAiVHVybiBcdTAwM2NiXHUw
+        MDNlcmlnaHRcdTAwM2MvYlx1MDAzZSBvbnRvIFx1MDAzY2JcdTAwM2UxN3Ro
+        IFN0XHUwMDNjL2JcdTAwM2UiLAogICAgICAgICAgICAgICAgICAgICAibWFu
+        ZXV2ZXIiIDogInR1cm4tcmlnaHQiLAogICAgICAgICAgICAgICAgICAgICAi
+        cG9seWxpbmUiIDogewogICAgICAgICAgICAgICAgICAgICAgICAicG9pbnRz
+        IiA6ICJ9YXNxRnhxel9TYEF3QWxAe0BUXSIKICAgICAgICAgICAgICAgICAg
+        ICAgfSwKICAgICAgICAgICAgICAgICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6
+        IHsKICAgICAgICAgICAgICAgICAgICAgICAgImxhdCIgOiAzOS43NTIxNDc0
+        LAogICAgICAgICAgICAgICAgICAgICAgICAibG5nIiA6IC0xMDQuOTk4ODUw
+        NwogICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAg
+        ICAidHJhdmVsX21vZGUiIDogIkRSSVZJTkciCiAgICAgICAgICAgICAgICAg
+        IH0sCiAgICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICAg
+        ImRpc3RhbmNlIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAgInRleHQi
+        IDogIjQ3OSBmdCIsCiAgICAgICAgICAgICAgICAgICAgICAgICJ2YWx1ZSIg
+        OiAxNDYKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAg
+        ICAgICAgImR1cmF0aW9uIiA6IHsKICAgICAgICAgICAgICAgICAgICAgICAg
+        InRleHQiIDogIjEgbWluIiwKICAgICAgICAgICAgICAgICAgICAgICAgInZh
+        bHVlIiA6IDI4CiAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAg
+        ICAgICAgICAgICJlbmRfbG9jYXRpb24iIDogewogICAgICAgICAgICAgICAg
+        ICAgICAgICAibGF0IiA6IDM5Ljc1MDU0MzYsCiAgICAgICAgICAgICAgICAg
+        ICAgICAgICJsbmciIDogLTEwNC45OTkxNjEKICAgICAgICAgICAgICAgICAg
+        ICAgfSwKICAgICAgICAgICAgICAgICAgICAgImh0bWxfaW5zdHJ1Y3Rpb25z
+        IiA6ICJUdXJuIFx1MDAzY2JcdTAwM2VyaWdodFx1MDAzYy9iXHUwMDNlIG9u
+        dG8gXHUwMDNjYlx1MDAzZUJsYWtlIFN0XHUwMDNjL2JcdTAwM2UiLAogICAg
+        ICAgICAgICAgICAgICAgICAibWFuZXV2ZXIiIDogInR1cm4tcmlnaHQiLAog
+        ICAgICAgICAgICAgICAgICAgICAicG9seWxpbmUiIDogewogICAgICAgICAg
+        ICAgICAgICAgICAgICAicG9pbnRzIiA6ICJ3fXJxRmZsel9TakB2QFxcZEB+
+        QHJBcEB8QCIKICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAg
+        ICAgICAgICAgInN0YXJ0X2xvY2F0aW9uIiA6IHsKICAgICAgICAgICAgICAg
+        ICAgICAgICAgImxhdCIgOiAzOS43NTE0ODI1MDAwMDAwMSwKICAgICAgICAg
+        ICAgICAgICAgICAgICAgImxuZyIgOiAtMTA0Ljk5Nzk2MzcKICAgICAgICAg
+        ICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgInRyYXZlbF9t
+        b2RlIiA6ICJEUklWSU5HIgogICAgICAgICAgICAgICAgICB9CiAgICAgICAg
+        ICAgICAgIF0sCiAgICAgICAgICAgICAgICJ0cmFmZmljX3NwZWVkX2VudHJ5
+        IiA6IFtdLAogICAgICAgICAgICAgICAidmlhX3dheXBvaW50IiA6IFtdCiAg
+        ICAgICAgICAgIH0KICAgICAgICAgXSwKICAgICAgICAgIm92ZXJ2aWV3X3Bv
+        bHlsaW5lIiA6IHsKICAgICAgICAgICAgInBvaW50cyIgOiAiZ31ycUZmbXtf
+        U2lAdUBgQGlAbEB7QHhEc0ZtRWdHZ0R1RW5Cc0NUXWpAdkB8QXhCcEB8QCIK
+        ICAgICAgICAgfSwKICAgICAgICAgInN1bW1hcnkiIDogIjE1dGggU3QgYW5k
+        IFdhemVlIFN0IiwKICAgICAgICAgIndhcm5pbmdzIiA6IFtdLAogICAgICAg
+        ICAid2F5cG9pbnRfb3JkZXIiIDogW10KICAgICAgfQogICBdLAogICAic3Rh
+        dHVzIiA6ICJPSyIKfQo=
+    http_version: 
+  recorded_at: Thu, 14 Jul 2016 18:02:16 GMT
+recorded_with: VCR 3.0.3

@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem "omniauth-google-oauth2"
 gem "figaro"
+gem "faraday"
+gem 'bootstrap-sass', '~> 3.3.6'
+
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -48,4 +51,9 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+end
+
+group :test do
+  gem "webmock"
+  gem "vcr"
 end
